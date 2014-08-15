@@ -18,12 +18,12 @@ MAC:
 
 Double check that they were installed!
 
-2. Grabbing geological datum
+2. Grabbing geological datum 
 -----------------------------
 MAP DATA:
-	1. physical location: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_map_subunits.zip
+	1. physical location: http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_map_subunits.zip
 
-	2. populated places: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_populated_places.zip
+	2. populated places: http//www.naturalearthdata.com/download/10m/cultural/ne_10m_populated_places.zip
 
 2. Converting & filtering data:
 	A. convert both files into GeoJSON
