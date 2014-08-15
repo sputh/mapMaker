@@ -1,0 +1,9 @@
+.state-boundary {
+  fill: none;
+  stroke: #fff;
+}
+.subunit.CA { fill: #ddc; }
+.subunit.NY { fill: #cdd; }
+.subunit.TX { fill: #cdc; }
+.subunit.VA { fill: #dcd; }
+.subunit.NV { display: none; }
