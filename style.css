@@ -2,8 +2,24 @@
   fill: none;
   stroke: #fff;
 }
-.subunit.CA { fill: #ddc; }
+/*.background {
+  fill: #fff;
+}*/
+#states {
+  fill: #7fffd4;
+}
+
+#states .active {
+  fill: orange;
+}
+.county-boundary {
+  fill: none;
+  stroke: #fff;
+  stroke-width: .5px;
+}
+
+/*.subunit.CA { fill: #ddc; }
 .subunit.NY { fill: #cdd; }
 .subunit.TX { fill: #cdc; }
 .subunit.VA { fill: #dcd; }
-.subunit.NV { display: none; }
+.subunit.NV { display: none; }*/

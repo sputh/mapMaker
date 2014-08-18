@@ -21,25 +21,23 @@ Double check that they were installed!
 2. Grabbing geological datum 
 -----------------------------
 MAP DATA:
+	Resources for data:
+	a. Natural Earth
+	b. U.S. Census Bureau -- the best for US topography
+
+	What I'm Using
 	1. physical location: http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_map_subunits.zip
 
 	2. populated places: http//www.naturalearthdata.com/download/10m/cultural/ne_10m_populated_places.zip
 
-2. Converting & filtering data:
-	A. convert both files into GeoJSON
-			ogr2ogr -f GeoJSON\
-			-where "ADM0_A3 IN('USA')"\
-			subunits.json\
-			ne_10m_admin_0_subunits.shp
-			
-			ogr2ogr -f GeoJSON\ 
-			-where "ADM0_A3 = 'USA' and SCALERANK <8"\
-			states.json\
-		ne_10m_populated_places.shp
+3. Converting & filtering data:
+----------------------------------
+	mapshaper.org
+	1. Drag and Drop Original Shape File
+	2. Save new file 
+	3. Convert both .shp and .shx of desired region to topoJSON
 
-	B. Merge Files
-		move files into the same folder
-		topojson -0 usa.json\
-		--id-property SU_A3\
-		--properties name=NAME\
-		-- subunits.json places.json	
+4. Starting up a Server
+----------------------------------
+		-- http-server
+		- http-server -p 8008 &

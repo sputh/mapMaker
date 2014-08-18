@@ -40,9 +40,10 @@ function ready(error, data, ca) {
     county.properties.years = dataByCountyByYear[+county.id]
   });
 
-  var color = d3.scale.linear()
-    .domain([0, 1])
-    .range(["orange", "blue"]);
+  var color = d3.scale.category20C();
+  // linear()
+  //   .domain([0, 1])
+  //   .range(["orange", "blue"]);
 
   var projection = d3.geo.albers()
     .translate([width / 2, height / 2 - 100])
